@@ -1,0 +1,42 @@
+h1,h2,h3,h4,h5,h6,p,a,span,ul,li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: all ease-in-out 0.3s;
+}
+
+:root {
+    --primary-blue: #01208E;
+    --secondary-orange: #FE7400;
+    --light-orange: #FD8D2f;
+    --primary-gray: #717070;
+    --primary-white: #FFFFFF;
+
+    --primary-font: "Rubik", sans-serif;
+    --heading-font: "Yeseva One", serif;
+    --robboto-font: "Roboto", sans-serif;
+    --popoppins-font: "Poppins", sans-serif;
+}
+
+body {
+    font-family: var(--primary-font);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--heading-font);
+}
+
+/* banner image section css start */
+.banner-image img{
+    width: 600px;
+    height: 350px;
+    border-radius: 5px;
+}
+/* banner image section css end */
