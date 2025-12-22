@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Agriculture Hub</title>
   <link rel="stylesheet" href="Style/style.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.3.5/css/dataTables.dataTables.min.css">
 
   <!-- Bootstrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -42,22 +43,22 @@
           <ul class="navbar-nav ms-auto gap-3 mb-2 mb-lg-0">
 
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Home</a>
+              <a class="nav-link text-light" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Famrming Guides</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">Crop Details</a>
+              <a class="nav-link text-light" href="farmimg.html">Famrming Guides</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link text-light" href="#"> Pest Control</a>
+              <a class="nav-link text-light" href="cropdetails.html">Crop Details</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Contact</a>
+              <a class="nav-link text-light" href="pest.html"> Pest Control</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#footer">Contact</a>
             </li>
           </ul>
 
@@ -212,7 +213,7 @@
           </div>
         </div>
         <div class="col-lg-6 offset-3 text-center mt-5">
-          <a href="" class="btn btn-outline-success">View More Crop Guides</a>
+          <a href="farmimg.html" class="btn btn-outline-success">View More Crop Guides</a>
         </div>
       </div>
     </div>
@@ -432,16 +433,18 @@
   <!-- pest control section start -->
 
   <section>
+
+    <!-- Ai khane js table library use kora jete pare -->
     <div class="container">
       <div class="row">
         <div class="col-lg-6 offset-lg-3 text-center">
-          <h3 class="mt-5 fw-bold text-success">Crop Details</h3>
+          <h3 class="mt-5 fw-bold text-success">Pest Details</h3>
           <p>The agency also produces programs for Bangladesh Betar, the public radio broadcasterr, and community
             radios. operates a call center were farmers can call for information on agriculture.s</p>
           <hr>
         </div>
         <div class="col-lg-12">
-          <table class="table">
+          <table class="table" id="myTable">
             <thead>
               <tr>
                 <th scope="col">Pest Name</th>
@@ -451,41 +454,104 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
+
+              <tr class="">
                 <th scope="row">Insects</th>
                 <td><img src="/Asset/Image/pest-1.png" class="img-fluid" width="200" alt=""></td>
-                <td>Otto</td>
-                <td>@mdo</td>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ab.</td>
+                <td>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Crop Rotation</li>
+                    <li class="list-group-item">Companion</li>
+                    <li class="list-group-item">Physical Barriers</li>
+                    <li class="list-group-item">Soil Health</li>
+                    <li class="list-group-item">Cleanless</li>
+                  </ul>
+                </td>
               </tr>
+
               <tr>
                 <th scope="row">Weeds</th>
                 <td><img src="/Asset/Image/pest-2.png" class="img-fluid" width="200" alt=""></td>
-                <td>Thornton</td>
-                <td>@fat</td>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, sed.</td>
+                <td>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Crop Rotation</li>
+                    <li class="list-group-item">Companion</li>
+                    <li class="list-group-item">Physical Barriers</li>
+                    <li class="list-group-item">Soil Health</li>
+                    <li class="list-group-item">Cleanless</li>
+                  </ul>
+                </td>
+
               </tr>
+
               <tr>
                 <th scope="row">Fungi</th>
                 <td><img src="/Asset/Image/pest-8.png" class="img-fluid" width="200" alt=""></td>
-                <td>Doe</td>
-                <td>@social</td>
+                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, suscipit!</td>
+
+                <td>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Crop Rotation</li>
+                    <li class="list-group-item">Companion</li>
+                    <li class="list-group-item">Physical Barriers</li>
+                    <li class="list-group-item">Soil Health</li>
+                    <li class="list-group-item">Cleanless</li>
+                  </ul>
+
+                </td>
               </tr>
+
               <tr>
                 <th scope="row">Rodents</th>
                 <td><img src="/Asset/Image/pest-5.png" class="img-fluid" width="200" alt=""></td>
-                <td>Doe</td>
-                <td>@social</td>
+                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, sapiente!</td>
+
+                <td>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Crop Rotation</li>
+                    <li class="list-group-item">Companion</li>
+                    <li class="list-group-item">Physical Barriers</li>
+                    <li class="list-group-item">Soil Health</li>
+                    <li class="list-group-item">Cleanless</li>
+                  </ul>
+
+                </td>
               </tr>
+
               <tr>
                 <th scope="row">Defoliators</th>
                 <td><img src="/Asset/Image/pest-6.png" class="img-fluid" width="200" alt=""></td>
-                <td>Doe</td>
-                <td>@social</td>
+                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, ipsam?</td>
+                <td>
+
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Crop Rotation</li>
+                    <li class="list-group-item">Companion</li>
+                    <li class="list-group-item">Physical Barriers</li>
+                    <li class="list-group-item">Soil Health</li>
+                    <li class="list-group-item">Cleanless</li>
+                  </ul>
+
+                </td>
               </tr>
+
               <tr>
                 <th scope="row">Sap-suckers</th>
                 <td><img src="/Asset/Image/pest-7.png" class="img-fluid" width="200" alt=""></td>
-                <td>Doe</td>
-                <td>@social</td>
+                <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, sit?</td>
+                <td>
+
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Crop Rotation</li>
+                    <li class="list-group-item">Companion</li>
+                    <li class="list-group-item">Physical Barriers</li>
+                    <li class="list-group-item">Soil Health</li>
+                    <li class="list-group-item">Cleanless</li>
+                  </ul>
+
+                </td>
               </tr>
             </tbody>
           </table>
@@ -496,10 +562,10 @@
   <!-- pest control section end -->
 
   <!-- Contact section start -->
-  <footer>
+  <footer id="footer">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 offset-3 text-center">
+        <div class="col-lg-6 text-center">
           <h2 class="fw-bold text-success mt-5">Contact Us</h2>
 
           <form id="form" class="border p-3 mt-3 mb-5">
@@ -536,13 +602,34 @@
             <button type="submit" class="btn btn-success w-100">Submit</button>
           </form>
         </div>
+
+        <div class="col-lg-6 mt-5">
+          <h2 class="text-success text-center">Direct Contact With Experts</h2>
+          <div class="expert-info border p-3 rounded mt-3">
+            <h6>MD MASUM BILLAH PRODHAN</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, accusantium!</p>
+            <p>Phone : 01870404751</p>
+            <p>Email:Masumbillahprodhan003@gmail.com</p>
+          </div>
+          <div class="expert-info border p-3 rounded mt-3">
+            <h6>MD MASUM BILLAH PRODHAN</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, accusantium!</p>
+            <p>Phone : 01870404751</p>
+            <p>Email:Masumbillahprodhan003@gmail.com</p>
+          </div>
+         
+        </div>
+         <p class="text-center text-dark bg-secondary py-3  m-0">COPYRIGHT &COPY; ALL RIGHT RESERVE 2025</p>
       </div>
     </div>
   </footer>
   <!-- Contact section end -->
+
+  <script src="/Js/jquery-3.7.1.min.js"></script>
   <!-- Bootstrap-CDN -Link -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
+  <script src="https://cdn.datatables.net/2.3.5/js/dataTables.min.js"></script>
   <!-- Js connection -->
   <script src="Js/crop.js"></script>
 </body>

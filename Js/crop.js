@@ -63,3 +63,6 @@ document.getElementById("form").addEventListener("submit", function (e) {
         document.getElementById("name-error").innerHTML = "<p class='text-danger'>Please enter name</p>"
     }
 })
+
+
+let table = new DataTable('#myTable');
